@@ -10,7 +10,7 @@
 <div class="form-group">
     <label for="preco" class="col-sm-3 control-label">Preço</label>
     <div class="col-sm-5">
-        <input type="text" class="form-control" placeholder="Preço" name="preco" data-validation="required"
+        <input type="number" class="form-control" placeholder="Preço" name="preco" data-validation="required"
                value="<?=$produto->getPreco()?>">
     </div>
 </div>
@@ -18,11 +18,11 @@
 <div class="form-group">
     <label for="descricao" class="col-sm-3 control-label">Descrição</label>
     <div class="col-sm-8">
-        <input type="textarea" class="form-control" placeholder="Descrição" name="descricao" data-validation="required"
+        <input type="textarea" class="form-control" placeholder="Descrição" name="descricao"
                value="<?=$produto->getdescricao()?>">
     </div>
 </div>
-
+<!-- Campo Categoria -->
 <div class="form-group">
     <label for="nome" class="col-sm-3 control-label">Função</label>
     <div class="col-sm-4">
@@ -41,7 +41,7 @@
         </select>
     </div>
 </div>
-
+<!-- validação usado ou novo -->
 <div class="form-group">
     <div class="col-sm-8">
         <input type="checkbox" name="usado" <?=$produto->isUsado()?> value="true"> Usado

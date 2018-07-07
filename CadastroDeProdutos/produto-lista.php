@@ -10,10 +10,11 @@ require_once("banco-produto.php");
 	?>
 		<tr>
 			<td><?= $produto->getNome() ?></td>
-			<td><?= $produto->getPreco() ?></td>
-			<td><?= $produto->precoComDesconto(0.1) ?></td>
+			<td>R$ <?= Ferramenta::converteNumero($produto->getPreco(),2,',','.') ?></td>
+            <td>Desconto R$ <strong><?= Ferramenta::converteNumero($produto->precoComDesconto(0.1),2,',','.') ?> </strong></td>
 			<td><?= substr($produto->getDescricao(), 0, 40) ?></td>
 			<td><?= $produto->getCategoria()->getNome() ?></td>
+            <td><?= $produto->isUsado()== 1?"Usado":"Novo" ?></td>
 			<td>
 				<a class="btn btn-primary"
 					href="produto-altera-formulario.php?id=<?=$produto->getId()?>">
