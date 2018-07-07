@@ -33,7 +33,7 @@ require_once("conecta.php");
              <ul class="nav navbar-nav">
                 <li><a href="usuario-formulario.php">Cadastrar Usuario</a> </li>
                  <li><a href="listaDeUsuarios.php">Lista de Usuarios</a> </li>
-                 <li><a href="sobre.php">Upload de arquivos</a> </li>
+                 <li><a href="upload.php">Upload de arquivos</a> </li>
                  <li><a href="sobre.php">Download de arquivos</a> </li>
                  <li><a href="contato.php">Contato</a> </li>
              </ul>
